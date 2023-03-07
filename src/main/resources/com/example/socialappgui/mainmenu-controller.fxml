@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialappgui.controller.MainMenuController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonChangeAccount" alignment="CENTER" layoutX="100.0" mnemonicParsing="false" onAction="#changePressed" prefHeight="32.0" prefWidth="167.0" text="Log Off" translateY="39.0" />
+            <Label fx:id="userLabel" prefHeight="39.0" prefWidth="259.0" text="Hello, USER!" translateX="-150.0">
+               <font>
+                  <Font name="Gabriola" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="67.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonCurrentFriends" mnemonicParsing="false" onAction="#friendsPressed" prefHeight="69.0" prefWidth="175.0" text="View Current Friends" />
+            <Button fx:id="buttonReceivedRequests" mnemonicParsing="false" onAction="#receivedRequestsPressed" prefHeight="68.0" prefWidth="175.0" text="View Received Requests" />
+            <Button fx:id="buttonSentRequests" mnemonicParsing="false" onAction="#sentRequestsPressed" prefHeight="69.0" prefWidth="175.0" text="View Sent Requests" />
+            <Button fx:id="buttonOtherUsers" mnemonicParsing="false" onAction="#othersPressed" prefHeight="69.0" prefWidth="175.0" text="View Other Users" />
+         </children>
+      </HBox>
+   </bottom>
+   <right>
+      <VBox prefHeight="296.0" prefWidth="113.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonChangeStatus" mnemonicParsing="false" onAction="#changeStatus" prefHeight="45.0" prefWidth="113.0" text="Change Status" translateY="242.0" />
+            <Button fx:id="buttonRemoveDeleteDecline" mnemonicParsing="false" onAction="#removeDeleteDecline" prefHeight="45.0" prefWidth="113.0" text="Remove Friend" translateY="242.0" />
+            <Label text="Find users:" />
+            <TextField fx:id="searchbar" />
+            <Button mnemonicParsing="false" onAction="#resetSearch" prefHeight="25.0" prefWidth="115.0" text="Reset" />
+            <Button fx:id="buttonAcceptRequest" mnemonicParsing="false" onAction="#acceptRequest" prefHeight="45.0" prefWidth="113.0" text="Accept Request" translateY="84.0" />
+            <Button fx:id="buttonSendRequest" mnemonicParsing="false" onAction="#sendRequest" prefHeight="45.0" prefWidth="113.0" text="Send Request" translateY="38.0" />
+            <Button fx:id="chatButton" mnemonicParsing="false" onAction="#chatPressed" prefHeight="45.0" prefWidth="113.0" text="Chat" translateY="83.0" />
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <TableView fx:id="tableView" prefHeight="403.0" prefWidth="507.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="tableColumnName" prefWidth="152.0" text="Username" />
+          <TableColumn fx:id="tableColumnDescription" minWidth="0.0" prefWidth="152.0" text="Status" />
+           <TableColumn fx:id="tableColumnSince" prefWidth="152.0" text="Friends Since" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

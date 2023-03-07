@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="544.0" prefWidth="395.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialappgui.controller.ChatController">
+   <children>
+      <TextField fx:id="text" layoutY="488.0" prefHeight="25.0" prefWidth="343.0" />
+      <Button layoutY="513.0" mnemonicParsing="false" onAction="#clearText" prefHeight="34.0" prefWidth="199.0" text="Clear" />
+      <Button fx:id="exitButton" layoutX="200.0" layoutY="513.0" mnemonicParsing="false" onAction="#exit" prefHeight="34.0" prefWidth="198.0" text="Return" />
+      <Button onAction="#sendPressed" layoutX="343.0" layoutY="488.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Send" />
+      <ListView fx:id="messageList" prefHeight="489.0" prefWidth="398.0" />
+   </children>
+</AnchorPane>
