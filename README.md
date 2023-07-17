@@ -1,4 +1,4 @@
-# MAP Final-Lab - Social App
+# MAP Final Lab - Social App
 
 EN: This application is the final version of the homework received at the "Advanced Programming Methods" course at Babeș-Bolyai University.
 It is an application that stores data using a PostgreSQL database, and has multiple functionalities:
