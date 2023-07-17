@@ -8,7 +8,7 @@ It is an application that stores data using a PostgreSQL database, and has multi
 4. Sending and viewing messages - by choosing a friend, the user can view the messages sent between the two and converse in real time.
 5. Log Out - by pressing the "Log out" button in the main menu, the user will log out of the application.
 
-This application was built using the Java programming language with the GUI being created by using JavaFX. The observer pattern is used in order to display conversation taking place in real time.
+This application was built using the Java programming language with the GUI being created by using JavaFX. The observer pattern is used in order to display the conversation taking place in real time.
 This application does not have any network features, everything is done locally.
 
 RO: Această aplicație este versiunea finală a temei primite în cadrul materiei "Metode Avansate de Programare" la Universitatea Babeș-Bolyai.
@@ -19,5 +19,5 @@ Este o aplicație care stochează date utilizând o bază de date PostgreSQL și
 4. Trimiterea și vizualizarea de mesaje - prin selectarea unui prieten, utilizatorul poate să vizualizeze mesajele trimise de cei doi și să converseze în timp real.
 5. Log Out - prin apăsarea butonului "Log out" în meniul principal, utilizatorul se poate deconecta de la aplicație.
 
-Această aplicație a fost construită utilizând limbajul de programare Java iar GUI-ul a fost creat utilizând JavaFX. Șablonul de proiectare (pattern-ul) observer este utilizar pentru a prezenta desfășurarea conversației în timp real.
+Această aplicație a fost construită utilizând limbajul de programare Java iar GUI-ul a fost creat utilizând JavaFX. Șablonul de proiectare (pattern-ul) observer este utilizat pentru a prezenta desfășurarea conversației în timp real.
 Această aplicație nu conține elemente de networking, totul desfășurându-se la nivel local.
